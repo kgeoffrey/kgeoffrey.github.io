@@ -4,17 +4,23 @@
  ******************************************************************************/
 /*******************************************************************************
  * Themes
+
+ washed out red : #E28889
+ washed out blue : #2f81f7
+
+ dark blue : #445588 , #355BF5
+
  ******************************************************************************/
 :root {
-  --global-bg-color: #ffffff;
+  --global-bg-color: #f5f5f5;
   --global-code-bg-color: rgba(181, 9, 172, 0.05);
   --global-text-color: #000000;
   --global-text-color-light: #828282;
-  --global-theme-color: #355BF5;
+  --global-theme-color: #007bff;
   --global-hover-color: #2584F8;
   --global-hover-text-color: #ffffff;
-  --global-footer-bg-color: #1C1C1D;
-  --global-footer-text-color: #e8e8e8;
+  --global-footer-bg-color: #ebebeb;
+  --global-footer-text-color: #1C1C1D;
   --global-footer-link-color: #ffffff;
   --global-distill-app-color: #828282;
   --global-divider-color: rgba(0,0,0,.1);
@@ -52,10 +58,10 @@ html[data-theme=dark] {
   --global-code-bg-color: #2c3237;
   --global-text-color: #e8e8e8;
   --global-text-color-light: #e8e8e8;
-  --global-theme-color: #E28889;
-  --global-hover-color: #CC6666;
+  --global-theme-color: #6679b3;
+  --global-hover-color: #E28889;
   --global-hover-text-color: #ffffff;
-  --global-footer-bg-color: #1F1B24;
+  --global-footer-bg-color: #29292a;
   --global-footer-text-color: #e8e8e8;
   --global-footer-link-color: #e8e8e8;
   --global-distill-app-color: #e8e8e8;

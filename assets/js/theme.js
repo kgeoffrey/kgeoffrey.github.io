@@ -9,7 +9,7 @@ let toggleTheme = (theme) => {
 }
 
 
-let setTheme = (theme) =>  {
+let setTheme = (theme) => {
   transTheme();
   setHighlight(theme);
   setGiscusTheme(theme);
@@ -19,7 +19,7 @@ let setTheme = (theme) =>  {
 
     // Add class to tables.
     let tables = document.getElementsByTagName('table');
-    for(let i = 0; i < tables.length; i++) {
+    for (let i = 0; i < tables.length; i++) {
       if (theme == "dark") {
         tables[i].classList.add('table-dark');
       } else {
@@ -35,7 +35,7 @@ let setTheme = (theme) =>  {
   if (typeof medium_zoom !== 'undefined') {
     medium_zoom.update({
       background: getComputedStyle(document.documentElement)
-          .getPropertyValue('--global-bg-color') + 'ee',  // + 'ee' for trasparency.
+        .getPropertyValue('--global-bg-color') + 'ee',  // + 'ee' for trasparency.
     })
   }
 };
@@ -80,8 +80,8 @@ let transTheme = () => {
 let initTheme = (theme) => {
   if (theme == null || theme == 'null') {
     const userPref = window.matchMedia;
-    if (userPref && userPref('(prefers-color-scheme: dark)').matches) {
-        theme = 'dark';
+    if (userPref && userPref('(prefers-color-scheme: light)').matches) {
+      theme = 'light';
     }
   }
 
